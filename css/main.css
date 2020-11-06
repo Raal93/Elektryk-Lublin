@@ -1,0 +1,285 @@
+@import url("https://use.typekit.net/iip7dxx.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    /*  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;*/
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.line-break {
+    display: block;
+}
+
+
+/*  HEADER  */
+
+.brand {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    width: 219px;
+    height: 52px;
+}
+
+.brand .phone-row {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 576px) {
+    .brand .phone-row {
+        margin-top: 0;
+    }
+}
+
+.brand .phone-nr {
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: #a2d69d;
+    font-weight: bold;
+}
+
+.brand .caption-mid {
+    font-size: 14px;
+    color: #393e46;
+    margin-bottom: 0;
+    line-height: 16px;
+}
+
+.brand .caption-bottom {
+    font-size: 14px;
+    color: #7cc576;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .brand .phone-nr {
+        font-size: 22px;
+        line-height: normal;
+    }
+
+    .brand .caption-mid {
+        font-size: 18px;
+        line-height: normal;
+    }
+
+    .brand .caption-bottom {
+        font-size: 18px;
+    }
+}
+
+.brand .phone-icon {
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+}
+
+
+/*   NAV   */
+
+header {
+	position: relative;
+}
+
+.navigation {
+    background-color: #393e46;
+
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+}
+
+.primary-menu {
+}
+
+.primary-menu .mobile-menu {
+    display: block;
+    font-size: 24px;
+    text-align: right;
+    margin-right: 30px;
+    color: #ffffff;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.primary-menu ul {
+    padding-bottom: 15px;
+    display: none;
+}
+
+.primary-menu li {
+    text-align: right;
+}
+
+.primary-menu li a {
+    display: inline-block;
+    color: #ffffff;
+    width: 200px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.primary-menu li:hover {
+    border-bottom: solid 1px #ffffff;
+}
+
+@media screen and (min-width: 576px) {
+    .primary-menu ul {
+        display: block;
+    }
+
+    .primary-menu .mobile-menu {
+        display: none;
+    }
+
+    .primary-menu li {
+        display: inline-block;
+
+    }
+
+    .primary-menu li a {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .primary-menu li a {
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .primary-menu li a {
+        width: 200px;
+    }
+}
+
+/*  BANNER  */
+
+.banner {
+    background-image: url("../img/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0 12% 0;
+}
+
+@media screen and (min-width: 576px) {
+    .banner {
+    	padding: 13% 0;
+    }
+}
+
+.banner h1 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.banner .footnote {
+    display: block;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.banner .btn {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #7cc576;
+    height: 40px;
+    min-width: 150px;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+@media screen and (min-width: 576px) {
+    .banner h1 {
+        font-size: 52px;
+        line-height: 46px;
+
+    }
+
+    .banner .footnote {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner h1 {
+        font-size: 67px;
+        line-height: 57px;
+        margin-bottom: -5px;
+    }
+
+    .banner .footnote {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
