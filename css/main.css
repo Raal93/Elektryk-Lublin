@@ -283,13 +283,15 @@ header {
     padding-bottom: 80px;
 }
 
-.services .serv-header {
+.services .serv-header,
+.how-we-work .how-we-work-header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.services .serv-header p {
+.services .serv-header p,
+.how-we-work .how-we-work-header p {
     margin-bottom: 60px;
     font-size: 16px;
     letter-spacing: 2px;
@@ -298,7 +300,8 @@ header {
 }
 
 .services .serv-header .bottom-border,
-.localisation .bottom-border {
+.localisation .bottom-border,
+.how-we-work .how-we-work-header .bottom-border {
     border-bottom: 2.375px solid #7cc576;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -341,7 +344,8 @@ header {
     text-align: center;
 }
 
-.services .btn {
+.services .btn,
+.how-we-work .btn {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #7cc576;
@@ -455,6 +459,35 @@ header {
 }
 
 
+
+/*   HOW WE WORK  */
+
+
+.how-we-work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.how-we-work .bottom-content h3 {
+    font-size: 24px;
+    line-height: 37px;
+    color: #393e46;
+    text-transform: none;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.how-we-work .bottom-content p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #393e46;
+    margin-bottom: 40px;
+}
+
+.how-we-work {}
+
+.how-we-work {}
 
 
 
