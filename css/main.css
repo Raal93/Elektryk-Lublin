@@ -10,6 +10,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     font-size: 16px;
+    /*font-family: "Istok Web";*/
 }
 
 img {
@@ -316,11 +317,26 @@ header {
     height: 53px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.services .serv-card h3 {
+    text-transform: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #222831;
+    margin-bottom: 10px;
+}
+
+.services .serv-card p {
+    letter-spacing: 1px;
+    line-height: 23px;
+    color: #7e7e7e;
+    /*font-weight: 400;*/
 }
 
 .services .btn-wrap {
-	text-align: center;
+    text-align: center;
 }
 
 .services .btn {
@@ -330,14 +346,18 @@ header {
     border: 2px solid;
     margin-left: 0;
     margin-right: 0;
+    border-radius: 0;
+    font-size: 14px;
+    height: 40px;
+    min-width: 150px;
 }
 
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
     .services .serv-card {
-        margin-left: 0;
-        margin-right: 0;
+        /* margin-left: 0;
+        margin-right: 0;*/
         text-align: left;
     }
 
