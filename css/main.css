@@ -297,11 +297,13 @@ header {
     color: #7e7e7e;
 }
 
-.services .serv-header .bottom-border {
+.services .serv-header .bottom-border,
+.localisation .bottom-border {
     border-bottom: 2.375px solid #7cc576;
     padding-bottom: 10px;
     margin-bottom: 10px;
     display: inline-block;
+    line-height: 38px;
 }
 
 .services .serv-card {
@@ -356,8 +358,6 @@ header {
 
 @media screen and (min-width: 768px) {
     .services .serv-card {
-        /* margin-left: 0;
-        margin-right: 0;*/
         text-align: left;
     }
 
@@ -366,6 +366,94 @@ header {
         margin-right: 0;
     }
 }
+
+
+/*   LOCALISATION   */
+
+
+.localisation {
+    width: 100%;
+    background-color: #222831;
+    color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loc-map-container {
+    width: 100%;
+    background-image: url("../img/map-example.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: contain;*/
+    background-size: cover;
+    min-height: 300px;
+}
+
+.localisation .loc-text-container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*background-color: pink;*/
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.loc-text-wrap {
+    max-width: 350px;
+    /*padding-right: 30px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+    .localisation .loc-text-container {
+        width: 270px;
+        padding-right: 0;
+        margin-left: auto;
+    }
+
+    .loc-map-container {
+        width: 50%;
+        min-height: 0;
+    }
+
+    .loc-text-wrap {
+        padding-right: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .localisation .loc-text-container {
+        width: 360px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .localisation .loc-text-container {
+        width: 480px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .localisation .loc-text-container {
+        width: 570px;
+    }
+}
+
+
+.localisation .loc-text-container p,
+.localisation .loc-text-container p~span {
+    letter-spacing: 1px;
+    line-height: 23px;
+    color: #eeeeee;
+}
+
+.localisation .loc-text-container span {
+    font-weight: 700;
+}
+
 
 
 
