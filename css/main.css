@@ -9,7 +9,7 @@
 body {
     color: #000000;
     background-color: #ffffff;
-    font-size: 16px;
+    font-size: 14px;
     /*font-family: "Istok Web";*/
 }
 
@@ -43,10 +43,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: myriad-pro, sans-serif;
+    
     font-style: normal;
     font-weight: 700;
-    text-transform: uppercase;
+}
+
+h1 {
+	font-family: myriad-pro, sans-serif;
+	text-transform: uppercase;
 }
 
 .line-break {
@@ -124,7 +128,7 @@ h6 {
 
 /*   NAV   */
 
-header {
+.nav-header {
     position: relative;
 }
 
@@ -165,17 +169,22 @@ header {
     width: 200px;
     text-align: center;
     font-weight: 700;
-    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 5px;
+    margin-top: 5px;
+    transition: 700ms;
 }
 
-.primary-menu li:hover {
-    border-bottom: solid 1px #ffffff;
+.primary-menu li a:hover {
+    background-color: #7cc576;
+    color: #393e46;
 }
 
 @media screen and (min-width: 576px) {
     .primary-menu ul {
         display: block;
+        padding-bottom: 0;
     }
 
     .primary-menu .mobile-menu {
@@ -194,15 +203,16 @@ header {
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .primary-menu li a {
-        width: 150px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .primary-menu li a {
-        width: 200px;
+        
     }
 }
 
@@ -251,6 +261,14 @@ header {
     color: #ffffff;
 }
 
+.banner .btn:hover,
+.services .btn:hover,
+.how-we-work .btn:hover {
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	/*background-color: #7cc576;*/
+    /*color: #393e46 ;*/
+}
+
 @media screen and (min-width: 576px) {
     .banner h1 {
         font-size: 52px;
@@ -283,6 +301,12 @@ header {
     padding-bottom: 80px;
 }
 
+.services h2,
+.how-we-work h2,
+.our-customers h2 {
+    color: #393e46;
+}
+
 .services .serv-header,
 .how-we-work .how-we-work-header {
     display: flex;
@@ -290,18 +314,21 @@ header {
     align-items: flex-end;
 }
 
-.services .serv-header p,
-.how-we-work .how-we-work-header p {
+.services .serv-header h3,
+.how-we-work .how-we-work-header h3,
+.our-customers .customers-header h3 {
     margin-bottom: 60px;
     font-size: 16px;
     letter-spacing: 2px;
     line-height: 21px;
     color: #7e7e7e;
+    font-weight: 500;
 }
 
 .services .serv-header .bottom-border,
 .localisation .bottom-border,
-.how-we-work .how-we-work-header .bottom-border {
+.how-we-work .how-we-work-header .bottom-border,
+.our-customers .customers-header .bottom-border {
     border-bottom: 2.375px solid #7cc576;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -478,18 +505,42 @@ header {
     margin-bottom: 15px;
 }
 
-.how-we-work .bottom-content p {
+.how-we-work .bottom-content p,
+.our-customers .customers-header p {
     font-size: 14px;
     line-height: 22px;
     color: #393e46;
     margin-bottom: 40px;
 }
 
-.how-we-work {}
 
-.how-we-work {}
+/*   OUR CUSTOMERS   */
 
+.our-customers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.our-customers .customers-header {
+    margin-bottom: 50px;
+}
+
+.our-customers .bg-green {
+    background-color: #7cc576;
+}
+
+.our-customers .company-logo {
+    max-width: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+
+.our-customers .company-logo img:hover {
+
+}
 
 
 @media screen and (min-width: 576px) {}
