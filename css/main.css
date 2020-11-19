@@ -540,7 +540,8 @@ h1 {
 }
 
 .our-customers .company-logo img {
-	filter:  grayscale(100%);
+	filter:  grayscale(100%) opacity(80%);
+	/*filter: brightness(0) invert(100%) opacity(80%);*/
 }
 
 /*   ABOUT US   */
