@@ -304,6 +304,7 @@ h1 {
 .services {
     padding-top: 60px;
     padding-bottom: 80px;
+    text-align: right;
 }
 
 .services h2,
@@ -350,15 +351,15 @@ h1 {
     max-width: 220px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
 }
 
 .services .serv-card img {
     width: 53px;
     height: 53px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+        margin-right: 0;
     margin-bottom: 10px;
 }
 
@@ -395,18 +396,17 @@ h1 {
     min-width: 150px;
 }
 
-@media screen and (min-width: 576px) {}
+/*@media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
     .services .serv-card {
-        text-align: left;
+        
     }
 
     .services .serv-card img {
-        margin-left: 0;
-        margin-right: 0;
+       
     }
-}
+}*/
 
 
 /*   LOCALISATION   */
@@ -503,7 +503,9 @@ h1 {
     text-align: center;
 }
 
-
+.how-we-work .how-we-work-header {
+	text-align: right;
+}
 
 .how-we-work .bottom-content h3 {
     font-size: 24px;
