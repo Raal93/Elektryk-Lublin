@@ -154,6 +154,12 @@ h1 {
     padding-bottom: 15px;
 }
 
+.primary-menu .mobile-menu img {
+	width: 26px;
+	height: 23px;
+	margin-left: auto;
+}
+
 .primary-menu ul {
     padding-bottom: 15px;
     display: none;
@@ -497,6 +503,8 @@ h1 {
     text-align: center;
 }
 
+
+
 .how-we-work .bottom-content h3 {
     font-size: 24px;
     line-height: 37px;
@@ -542,8 +550,8 @@ h1 {
 @media screen and (min-width: 576px) {
     .our-customers .company-logo {
         max-width: 180px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -596,6 +604,9 @@ h1 {
 
 .footer .footer-about img {
     margin-bottom: 30px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer .footer-localisation,
